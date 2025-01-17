@@ -69,14 +69,14 @@ export default function Content() {
           value={word}
           onChange={handleInputChange}
           placeholder="Type to search"
-          className="px-2 py-1 font-semibold border-2 rounded-lg border-slate-300"
+          className="input"
         />
       </div>
 
       {status === "ready" && (
         <div className="p-2 bg-slate-700">
-          <h3 className="m-4 text-3xl font-semibold text-purple-400">{word}</h3>
-          <h4 className="mx-4 text-2xl text-sky-300">Definitions:</h4>
+          <h3 className="word">{word}</h3>
+          <h4 className="definition">Definitions:</h4>
 
           <div className="p-2 text-lg text-slate-300">
             {data?.definitions?.map((def, index) => {
