@@ -79,13 +79,11 @@ export default function Content() {
           <h4 className="definition">Definitions:</h4>
 
           <div className="p-2 text-lg text-slate-300">
-            {data?.definitions?.map((def, index) => {
-              return (
-                <ul className="mx-4 list-disc">
-                  <li key={index}> {def?.definition}</li>
-                </ul>
-              );
-            })}
+            <ul className="mx-4 list-disc">
+              {data?.definitions?.map((def, index) => {
+                return <li key={index}> {def?.definition}</li>;
+              })}
+            </ul>
           </div>
         </div>
       )}
