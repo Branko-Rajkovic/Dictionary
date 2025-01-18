@@ -6,13 +6,13 @@ This is a Dictionary application built using **React** and **Vite**. The project
 
 - **Frontend Framework:** [React](https://reactjs.org/)
 - **Build Tool:** [Vite](https://vitejs.dev/)
-- **Styling:** [Tailwind CSS](https://tailwindcss.com/) and [PostCSS](https://postcss.org/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 
 ## Clone the repository:
 
 ```bash
 git clone https://github.com/Branko-Rajkovic/Dictionary.git
-cd Dictionary
+
 ```
 
 ## Project Structure
