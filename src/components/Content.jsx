@@ -1,4 +1,5 @@
 import { useEffect, useReducer } from "react";
+import { motion } from "framer-motion";
 
 const initialState = {
   data: [],
@@ -75,16 +76,22 @@ export default function Content() {
 
       {status === "ready" && (
         <div className="p-2 bg-slate-700">
-          <h3 className="word">{word}</h3>
-          <h4 className="definition">Definitions:</h4>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+          >
+            <h3 className="word">{word}</h3>
+            <h4 className="definition">Definitions:</h4>
 
-          <div className="p-2 text-lg text-slate-300">
-            <ul className="mx-4 list-disc">
-              {data?.definitions?.map((def, index) => {
-                return <li key={index}> {def?.definition}</li>;
-              })}
-            </ul>
-          </div>
+            <div className="p-2 text-lg text-slate-300">
+              <ul className="mx-4 list-disc">
+                {data?.definitions?.map((def, index) => {
+                  return <li key={index}> {def?.definition}</li>;
+                })}
+              </ul>
+            </div>
+          </motion.div>
         </div>
       )}
     </main>

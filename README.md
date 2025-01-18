@@ -1,5 +1,7 @@
 # Dictionary App
 
+# https://dictionary-react-app.web.app/
+
 This is a Dictionary application built using **React** and **Vite**. The project leverages **Tailwind CSS** for styling. It is designed to provide a seamless and user-friendly experience for looking up word definitions.
 
 ## Tech Stack
